@@ -28,6 +28,14 @@ def generate_password(length=12, use_uppercase=True, use_lowercase=True,
     # if use_lowercase:
     #     characters += string.ascii_lowercase
     # etc.
+    if use_lowercase:
+        characters += string.ascii_lowercase
+    if use_uppercase:
+        characters += string.ascii_uppercase
+    if use_digits:
+        characters += string.digits
+    if use_special:
+        characters += string.punctuation
 
     if not characters:
         return "Error: No character types selected!"
@@ -36,10 +44,21 @@ def generate_password(length=12, use_uppercase=True, use_lowercase=True,
 
     # TODO: Ensure at least one character from each selected type
     # This prevents passwords that don't meet the criteria
-
+    if use_lowercase:
+        password.append(random.choice(string.ascii_lowercase))
+    if use_uppercase:
+        password.append(random.choice(string.ascii_uppercase))
+    if use_digits:
+        password.append(random.choice(string.digits))
+    if use_special:
+        password.append(random.choice(string.punctuation))
+    if length < len(password):
+        return f"Error: Length must be at least {len(password)} for selected character types!"   
     # TODO: Fill the rest of the password randomly
-
+    while len(password) < length:
+        password.append(random.choice(characters))
     # TODO: Shuffle the password list to randomize order
+    random.shuffle(password)
 
     return ''.join(password)
 
@@ -62,7 +81,17 @@ def password_strength(password):
     # - Contains lowercase: +1 point
     # - Contains uppercase: +1 point
     # - Contains digits: +1 point
-
+    if len(password) >= 8:
+        score += 1
+    if len(password) >= 12:
+        score += 1
+    if any(c.islower() for c in password):
+        score += 1
+    if any(c.isupper() for c in password):
+        score += 1
+    if any(c.isdigit() for c in password):
+        score += 1
+        
     strength = ["Very Weak", "Weak", "Fair", "Good", "Strong", "Very Strong"]
     return strength[min(score, 5)]
 
