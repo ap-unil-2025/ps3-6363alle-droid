@@ -14,7 +14,6 @@ This assignment covers Git version control basics and Python fundamentals includ
 - `problem4.py` - File word counter
 - `bonus_password_generator.py` - (Optional) Password generator
 - `git_log.txt` - Your Git history for Problem 1
-- `sample.txt` - Created by problem4.py
 
 ## How to Complete This Assignment
 
@@ -29,7 +28,7 @@ This assignment covers Git version control basics and Python fundamentals includ
 python problem2.py
 python problem3.py
 python problem4.py
-python bonus_password_generator.py  # if completed
+python bonus_password_generator.py
 ```
 
 ## Submission Checklist
