@@ -26,4 +26,5 @@ test_outputs/
 .pytest_cache/
 
 # Don't ignore the sample file
-!sample.txt
+sample.txt
+image.png
