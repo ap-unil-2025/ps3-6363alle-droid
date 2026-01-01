@@ -3,7 +3,7 @@
 ## Student Information
 Name: Alessandro Botti
 Start Date: 29.09.2025
-Completion Date: 01.01.2026
+End Date: 01.01.2026
 
 ## Assignment Overview
 This assignment covers Git version control basics and Python fundamentals including variables, control flow, functions, and file I/O.
