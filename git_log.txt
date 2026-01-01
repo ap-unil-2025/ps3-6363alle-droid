@@ -1,0 +1,83 @@
+=== git log --oneline ===
+4b8ef92 Problem 4 solved
+2777631 Problem 3 solved
+3c0a153 Problem 2 solved
+e4cc135 Add my name and date
+7bcb689 Add GitHub Classroom autograding configuration
+2dc2daa Initial commit
+
+=== git log --stat --summary ===
+commit 4b8ef927190cebd38995da76b62807be902d62ce
+Author: BottiAlessandro <Alessandro.Botti@unil.ch>
+Date:   Thu Jan 1 16:36:28 2026 +0000
+
+    Problem 4 solved
+
+ problem4.py | 47 +++++++++++++++++++++++++++++++++++++++++++----
+ 1 file changed, 43 insertions(+), 4 deletions(-)
+
+commit 2777631c83e3522b9edfae3d2735e34956981814
+Author: BottiAlessandro <Alessandro.Botti@unil.ch>
+Date:   Thu Jan 1 16:08:04 2026 +0000
+
+    Problem 3 solved
+
+ problem3.py | 35 +++++++++++++++++++++++++++++++----
+ 1 file changed, 31 insertions(+), 4 deletions(-)
+
+commit 3c0a1539a0249336040387f3f2f0dafe8820edc3
+Author: BottiAlessandro <Alessandro.Botti@unil.ch>
+Date:   Thu Jan 1 15:33:10 2026 +0000
+
+    Problem 2 solved
+
+ problem2.py | 30 +++++++++++++++++++++++++++---
+ 1 file changed, 27 insertions(+), 3 deletions(-)
+
+commit e4cc135ec306e7ea553adc44938bb4eb45745a87
+Author: Alessandro Botti <alessandro.botti@unil.ch>
+Date:   Mon Sep 29 13:56:43 2025 +0000
+
+    Add my name and date
+
+ README.md | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+commit 7bcb689e6ec93cc64526a8c7be6547d031f5ef09
+Author: Anna Smirnova <anna.smirnova@unil.ch>
+Date:   Mon Sep 29 14:44:57 2025 +0200
+
+    Add GitHub Classroom autograding configuration
+
+ .github/classroom/autograding.json | 44 ++++++++++++++++++++++++++++++++++++++
+ .github/workflows/classroom.yml    | 33 +++-------------------------
+ 2 files changed, 47 insertions(+), 30 deletions(-)
+ create mode 100644 .github/classroom/autograding.json
+
+commit 2dc2daa38eab9338834bf27a431ee90c92a89e2c
+Author: github-classroom[bot] <66690702+github-classroom[bot]@users.noreply.github.com>
+Date:   Mon Sep 29 11:49:46 2025 +0000
+
+    Initial commit
+
+ .github/workflows/classroom.yml |  45 ++++++++++++
+ .gitignore                      |  29 ++++++++
+ INSTRUCTOR_SETUP.md             | 110 ++++++++++++++++++++++++++++
+ README.md                       |  41 +++++++++++
+ bonus_password_generator.py     |  92 ++++++++++++++++++++++++
+ problem2.py                     |  74 +++++++++++++++++++
+ problem3.py                     | 102 ++++++++++++++++++++++++++
+ problem4.py                     | 156 ++++++++++++++++++++++++++++++++++++++++
+ requirements.txt                |   1 +
+ test_assignment.py              | 139 +++++++++++++++++++++++++++++++++++
+ 10 files changed, 789 insertions(+)
+ create mode 100644 .github/workflows/classroom.yml
+ create mode 100644 .gitignore
+ create mode 100644 INSTRUCTOR_SETUP.md
+ create mode 100644 README.md
+ create mode 100644 bonus_password_generator.py
+ create mode 100644 problem2.py
+ create mode 100644 problem3.py
+ create mode 100644 problem4.py
+ create mode 100644 requirements.txt
+ create mode 100644 test_assignment.py
